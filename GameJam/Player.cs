@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace GameJam
 {
-    public class Player
+    public static class Player
     {
-        private int _lives;
+        public static int Lives = 1;
+
+        // Method to add lives
+        public static void AddLives (int lives)
+        {
+            if (lives < 0)
+            {
+                Lives += lives;
+            } else
+            {
+                Lives = 1;
+            }
+        }
     }
 }
