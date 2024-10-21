@@ -62,7 +62,7 @@ namespace GameJam
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Du sover igennem alarmen og vågner aldrig igen..");
-                    Player.Lives = 0;
+                    
                     break;
                 case "3":
                     WakeUp();
@@ -225,7 +225,7 @@ namespace GameJam
         public void Party()
         {
             Console.WriteLine("Du har haft en god dag. Du er nu klar til at skulle i byen med Orhan og feste igennem");
-            Console.WriteLine("1. Tag på den Brølende And\n2. Tag på A-Bar\n3. Tag på Old Irish\n 4. Tag på Proud Mary's");
+            Console.WriteLine("1. Tag på den Brølende And\n2. Tag på A-Bar\n3. Tag på Old Irish\n4. Tag på Proud Mary's");
             choice = Console.ReadLine();
             switch (choice)
             {
